@@ -1,0 +1,60 @@
+@keyframes inhale {
+    0% {transform: scale(0.33);}
+    3% {transform: scale(0.33);}
+    97% {transform: scale(1);}
+    100% {transform: scale(1);}
+}
+@keyframes exhale {
+    0% { transform: scale(1);  }
+    3% { transform: scale(0.9999);  }
+    97% {transform: scale(0.33);}
+    100% {transform: scale(0.33);}
+}
+
+@keyframes reset{
+    0%{transform: scale(0.5);}
+    60%{transform: scale(0.27);}
+    73%{transform: scale(0.35);}
+    83%{transform: scale(0.358);}
+    93%{transform: scale(0.333);}
+    100%{transform: scale(0.33);}
+}
+@keyframes circle-wiggle{
+    24%{transform: scale(0.27);}
+    50%{transform: scale(0.423);}
+    /* 60%{transform: scale(0.31);} */
+    83%{transform: scale(0.3);}
+    93%{transform: scale(0.34);}
+    100%{transform: scale(0.33);}
+}
+
+
+
+@keyframes wiggle{
+    25%{
+        transform: scale(0.6,1.3);
+    }
+    55%{
+        transform: scale(1.23,0.7);
+    }
+    75%{
+       transform: scale(0.8,1.23);
+    }
+    /* 84%{
+       transform: scale(1.15,0.89);
+    } */
+}
+@keyframes sponge{
+    10%{
+        transform:translate(1rem,.3rem);
+        /* opacity: .7; */
+    }
+    /* 50%{
+        transform: rotateX(360deg);
+        opacity: 1;
+    } */
+    90%{
+        transform: translate(.8rem 3rem);
+        /* opacity: .9; */
+    }
+}

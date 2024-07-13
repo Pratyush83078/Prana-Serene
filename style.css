@@ -1,0 +1,122 @@
+
+
+
+button {
+    padding: .8rem 0px;
+    width: 42%;
+    font-size: 1.5rem;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    font-family: cursive;
+    transition: 0.4s;
+    cursor: pointer;
+    background-color: hsl(0deg 0% 100%);
+    color: hsl(231deg 39% 65%);
+    border-radius: .5rem;
+    outline: none;
+    border: none;
+    position: absolute;
+    bottom: 10px;
+    left: 14px;
+}
+
+button:hover {
+    background-color: var(--primary) !important;
+    color: var(--color);
+}
+
+.moniter {
+    width: clamp(319px, 100vw, 450px);
+    height: clamp(319px, 100vw, 450px);
+    z-index: -2;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 6px ridge rgba(139, 69, 19,0.3); */
+}
+
+
+#main-text {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px #fff, 1px 1px 5px #fff, 0px 0px 7px #fff, 3px -4px 3px #fff, 1px 1px 5px #fff, 1px 1px 5px #fff, 0px 0px 7px #fff, 3px -4px 3px #fff;
+    transform: scale(0.33);
+    transition: 0.4s linear;
+    animation: reset 0.5s 1 ease-in;
+    font-family: cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4.5rem;
+    font-weight: 500;
+    color: rgba(20, 20, 30, 0.7);
+    cursor: crosshair;
+}
+
+.moniter>div>div {
+    font-size: 3.5rem;
+    background: rgba(119, 131, 195, 0.75);
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin: 0 8px;
+    color: aliceblue;
+}
+.anime{
+    position: absolute;
+    width: 37% ;
+    height: 37% ;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.16) ;
+    z-index: -9;
+    transition: .25s .5s ease-out;
+}
+/* .anime::before{
+    content: '';
+    position: absolute;
+    top: 50%;left: 50%;transform: translate(-50%,-50%);
+    width: 110% ;
+    height: 114% ;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 1) ;
+    z-index: -9;
+    animation: sponge 25s infinite;
+} */
+/* volume bar */
+#volume {
+    position: absolute;
+    bottom: .4rem;
+    right: 1.23rem;
+    padding: 6px 15px 3px;
+    transition: 0.4s 0.3s;
+    border-radius: .5rem;
+}
+
+#volume:hover {
+    background-color: hsl(236deg 41% 65% / 66%);
+}
+
+#volume>img {
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+#volume>input {
+    transform: translateY(-1.28rem);
+    /* height: .5rem; */
+    /* background-color: rgba(70, 70, 70, 0.3); */
+    opacity: 1;
+    margin-left: 5px;
+    width: 10rem;
+}
+
+#volume>input::-webkit-slider-thumb {
+    background-color: #fff;
+    border: none;
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
