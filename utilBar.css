@@ -68,6 +68,7 @@ input[type='number']{
 /* -----------  menu-bar ----------------- */
 
 #menu {
+    cursor:pointer;
     background: url('menu.png');
     background-size: cover;
     width: 3.8rem;
@@ -117,6 +118,7 @@ input[type='number']{
     filter: opacity(108%);
     transition: filter 0.2s ease-in;
     /* font-weight: 600; */
+    cursor:pointer;
 }
 
 .downSlide>img {
