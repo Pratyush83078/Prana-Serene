@@ -39,7 +39,7 @@ function reset() {
     if (bell.play) { bell.pause(); bell.currentTime = 0; }
     let img = $('.playPause>img')[timerPlayNo];
     timerOn = false;
-    img.src = 'play.png'; img.width = '20'; img.height = '20';
+    img.src = './png/play.png'; img.width = '20'; img.height = '20';
     $('.playPause')[timerPlayNo].style = 'background-color:rgb(101 112 173);';
     cycleFocusout(timerPlayNo);
     if(oscillator!=0 ){oscillator.stop();}
@@ -60,8 +60,8 @@ window.onkeydown = function (e) {
     if (e.key == 'n') {
         if (count == 1) {
             bell.play();
-            frequency[0].src = 'sDOM.mp3';
-            frequency[2].src = 'sDOM.mp3';
+            frequency[0].src = './music/sDOM.mp3';
+            frequency[2].src = './music/sDOM.mp3';
             frequency[0].currentTime = 0;
             frequency[2].currentTime = 0;
             slider[0].value = 15;
@@ -69,8 +69,8 @@ window.onkeydown = function (e) {
             count++;
         }
         else if (count == 2) {
-            frequency[0].src = 'pYOM.mp3';
-            frequency[2].src = 'pYOM.mp3';
+            frequency[0].src = './music/pYOM.mp3';
+            frequency[2].src = './music/pYOM.mp3';
             frequency[0].currentTime = 0;
             frequency[2].currentTime = 0;
             slider[0].value = 10;
@@ -78,8 +78,8 @@ window.onkeydown = function (e) {
             count = 0;
         }
         else if (count == 0) {
-            frequency[0].src = 'inhaling.mp3';
-            frequency[2].src = 'exhaling.mp3';
+            frequency[0].src = './music/inhaling.mp3';
+            frequency[2].src = './music/exhaling.mp3';
             frequency[0].currentTime = 0;
             frequency[2].currentTime = 0;
             slider[0].value = 12;

@@ -116,7 +116,7 @@ function volumeChange() {
 // startupMain()
 var bool = true, pos, time = 0, tt = -3, countCycles = 0, oneCycle = (breath[0] + breath[1] + breath[2] + breath[3]) / 60, timerOn = false;
 
-var bell = new Audio('bell.mp3');
+var bell = new Audio('./music/bell.mp3');
 b.onclick = function () {
     startupMain();
     b.style = 'animation:wiggle .5s 1 ease-out; background:radial-gradient(circle, rgba(139,69,19,0.1) 35%,rgba(29,28,296,0.2) 98%);color:#eff;';
@@ -444,14 +444,14 @@ function timerChanger() {
             let img = $('.playPause>img')[i];
             if (timerOn == false) {
                 timerOn = true;
-                img.src = 'stop.svg'; img.width = '40'; img.height = '40';
+                img.src = './png/stop.svg'; img.width = '40'; img.height = '40';
                 this.style = 'background-color:rgb(101 121 189);';
                 bell.play();
                 $('.timer')[i].style = 'opacity:1; box-shadow:hsl(0deg 0% 86%) 0px 0px 1.5px, rgb(148 151 209) 0px 0px 2px, inset hsl(236deg 41% 65%) 0px 0px 4px ';
             }
             else if (timerOn == true) {
                 timerOn = false;
-                img.src = 'play.png'; img.width = '20'; img.height = '20';
+                img.src = './png/play.png'; img.width = '20'; img.height = '20';
                 this.style = 'background-color:rgb(129 134 202);';
                 $('.timer')[i].style = 'opacity:8.4; box-shadow:hsl(233deg 38% 67% / 50%) 5px 0px, rgb(138 146 203 / 40%) 10px 0px, hsl(233deg 52% 50% / 7%) 15px 0px';
             }
@@ -459,7 +459,7 @@ function timerChanger() {
             for (let x = 0; x < topLeftSpan.length; x++) {
                 if (x != timerPlayNo && topLeftSpan.length > 0) {
                     let img = $('.playPause>img')[x];
-                    img.src = 'play.png'; img.width = '20'; img.height = '20';
+                    img.src = './png/play.png'; img.width = '20'; img.height = '20';
                     $('.playPause')[x].style = 'background-color:rgb(129 134 202);';
                     $('.timer')[x].style = 'opacity:8.4; box-shadow:none;';
                 }
