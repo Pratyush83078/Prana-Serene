@@ -1,4 +1,6 @@
-
+:root {
+    --font:'ArialRounded', -apple-system, BlinkMacSystemFont,    'Segoe UI', Roboto, Helvetica, Arial, sans-serif,    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
 
 
 button {
@@ -7,7 +9,7 @@ button {
     font-size: 1.5rem;
     word-spacing: 2px;
     letter-spacing: 1px;
-    font-family: cursive;
+    font-family: var(--font);
     transition: 0.4s;
     cursor: pointer;
     background-color: hsl(0deg 0% 100%);
@@ -47,7 +49,7 @@ button:hover {
     transform: scale(0.33);
     transition: 0.4s linear;
     animation: reset 0.5s 1 ease-in;
-    font-family: cursive;
+    font-family: var(--font);
     display: flex;
     align-items: center;
     justify-content: center;
