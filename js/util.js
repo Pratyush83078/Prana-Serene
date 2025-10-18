@@ -39,7 +39,7 @@ function reset() {
     if (bell.play) { bell.pause(); bell.currentTime = 0; }
     let img = $('.playPause>img')[timerPlayNo];
     timerOn = false;
-    img.src = './png/play.png'; img.width = '20'; img.height = '20';
+    img.src = './public/play.png'; img.width = '20'; img.height = '20';
     $('.playPause')[timerPlayNo].style = 'background-color:rgb(101 112 173);';
     cycleFocusout(timerPlayNo);
     if(oscillator!=0 ){oscillator.stop();}
