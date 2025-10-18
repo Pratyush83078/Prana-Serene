@@ -1,3 +1,4 @@
+document.body.style.opacity="1";
 var inhaleSound = new Audio('./music/inhaling.mp3'), exhaleSound = new Audio('./music/exhaling.mp3');
 // var sustainSound=new Audio('');
 // var retainSound=new Audio('');
