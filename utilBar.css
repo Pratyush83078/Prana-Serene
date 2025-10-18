@@ -32,11 +32,6 @@ html, body {
     color: var(--color);
 
 }
-body{
-  opacity:0;
-  transition:opacity 0.8s ease-out;
-}
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
